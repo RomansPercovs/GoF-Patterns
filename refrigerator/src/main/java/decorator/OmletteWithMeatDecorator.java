@@ -1,4 +1,6 @@
-public class OmletteWithMeatDecorator extends OmletteDecorator{
+package decorator;
+
+public class OmletteWithMeatDecorator extends OmletteDecorator {
 
     public OmletteWithMeatDecorator(Omlette omlette) {
         super(omlette);

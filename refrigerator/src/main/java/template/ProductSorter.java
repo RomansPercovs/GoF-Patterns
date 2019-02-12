@@ -1,3 +1,8 @@
+package template;
+
+import factory.Products;
+import factory.Product;
+
 import java.util.Map;
 
 public abstract class ProductSorter {

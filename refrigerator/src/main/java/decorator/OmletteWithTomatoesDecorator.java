@@ -1,3 +1,5 @@
+package decorator;
+
 public class OmletteWithTomatoesDecorator extends OmletteDecorator {
 
     public OmletteWithTomatoesDecorator(Omlette omlette) {

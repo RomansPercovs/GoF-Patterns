@@ -1,3 +1,6 @@
+package factory;
+
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,7 +10,7 @@ public class ProductFactory {
 
     // Flyweight
     public Map<Products, Product> getFlyweight(final Products product, final int amount, final int expireYear, final int expireMonth,
-                                      final int expireDay) {
+                                               final int expireDay) {
         switch (product) {
             case MILK:
                 if(products.containsKey(Products.MILK)) {

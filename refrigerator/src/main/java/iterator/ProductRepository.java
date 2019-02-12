@@ -1,10 +1,15 @@
+package iterator;
+
+import factory.Products;
+import factory.Product;
+
 import java.util.Map;
 
-public class ProductRepository implements Aggregate{
+public class ProductRepository implements Aggregate {
 
     private Map<Products, Product> listOfProducts;
 
-    ProductRepository(Map<Products, Product> products) {
+    public ProductRepository(Map<Products, Product> products) {
         this.listOfProducts = products;
     }
 

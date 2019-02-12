@@ -1,4 +1,6 @@
-public class Eggs implements Product{
+package factory;
+
+public class Eggs implements Product {
 
     private final int pieces;
     private final ExpireDate expireDate;
@@ -26,6 +28,6 @@ public class Eggs implements Product{
 
     @Override
     public String toString() {
-        return "Eggs";
+        return "factory.factory.Eggs";
     }
 }

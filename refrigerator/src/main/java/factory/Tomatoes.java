@@ -1,23 +1,26 @@
-public class Ham implements Product {
+package factory;
 
-    private final int slices;
+public class Tomatoes implements Product {
+
+    private final int pieces;
     private final ExpireDate expireDate;
 
-    public Ham(int slices, ExpireDate expireDate) {
-        this.slices = slices;
+    public Tomatoes(int pieces, ExpireDate expireDate) {
+        this.pieces = pieces;
         this.expireDate = expireDate;
     }
+
 
     public void showExpireDate() {
         System.out.println("Expire date: " + expireDate.getDay()+ "." + expireDate.getMonth() + "." + expireDate.getYear());
     }
 
     public void showAmount() {
-        System.out.println("Ham slices left: " + slices);
+        System.out.println("Tomatoes left: " + pieces);
     }
 
-    public int getSlices() {
-        return slices;
+    public int getPieces() {
+        return pieces;
     }
 
     public ExpireDate getExpireDate() {
@@ -26,6 +29,6 @@ public class Ham implements Product {
 
     @Override
     public String toString() {
-        return "Ham";
+        return "Tomatoes";
     }
 }

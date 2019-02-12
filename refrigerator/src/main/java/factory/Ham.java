@@ -1,10 +1,12 @@
-public class Milk implements Product {
+package factory;
 
-    private final int litres;
+public class Ham implements Product {
+
+    private final int slices;
     private final ExpireDate expireDate;
 
-    public Milk(int litres, ExpireDate expireDate) {
-        this.litres = litres;
+    public Ham(int slices, ExpireDate expireDate) {
+        this.slices = slices;
         this.expireDate = expireDate;
     }
 
@@ -13,11 +15,11 @@ public class Milk implements Product {
     }
 
     public void showAmount() {
-        System.out.println("Litres of milk left: " + litres);
+        System.out.println("Ham slices left: " + slices);
     }
 
-    public int getLitres() {
-        return litres;
+    public int getSlices() {
+        return slices;
     }
 
     public ExpireDate getExpireDate() {
@@ -26,6 +28,6 @@ public class Milk implements Product {
 
     @Override
     public String toString() {
-        return "Milk";
+        return "Ham";
     }
 }

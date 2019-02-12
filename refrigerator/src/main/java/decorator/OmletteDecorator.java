@@ -1,3 +1,5 @@
+package decorator;
+
 public abstract class OmletteDecorator implements Omlette {
 
     protected Omlette omlette;

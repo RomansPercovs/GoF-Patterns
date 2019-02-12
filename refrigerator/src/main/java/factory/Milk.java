@@ -1,24 +1,25 @@
-public class Tomatoes implements Product {
+package factory;
 
-    private final int pieces;
+public class Milk implements Product {
+
+    private final int litres;
     private final ExpireDate expireDate;
 
-    public Tomatoes(int pieces, ExpireDate expireDate) {
-        this.pieces = pieces;
+    public Milk(int litres, ExpireDate expireDate) {
+        this.litres = litres;
         this.expireDate = expireDate;
     }
-
 
     public void showExpireDate() {
         System.out.println("Expire date: " + expireDate.getDay()+ "." + expireDate.getMonth() + "." + expireDate.getYear());
     }
 
     public void showAmount() {
-        System.out.println("Tomatoes left: " + pieces);
+        System.out.println("Litres of milk left: " + litres);
     }
 
-    public int getPieces() {
-        return pieces;
+    public int getLitres() {
+        return litres;
     }
 
     public ExpireDate getExpireDate() {
@@ -27,6 +28,6 @@ public class Tomatoes implements Product {
 
     @Override
     public String toString() {
-        return "Tomatoes";
+        return "factory.factory.Milk";
     }
 }

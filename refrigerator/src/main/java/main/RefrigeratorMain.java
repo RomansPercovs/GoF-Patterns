@@ -1,3 +1,18 @@
+package main;
+
+import factory.ProductFactory;
+import factory.Products;
+import factory.Product;
+import decorator.Omlette;
+import decorator.OmletteWithMeatDecorator;
+import decorator.OmletteWithTomatoesDecorator;
+import decorator.SimpleOmlette;
+import iterator.Iterator;
+import iterator.ProductRepository;
+import template.AscendingProductSorter;
+import template.DescendingProductSorter;
+import template.ProductSorter;
+
 import java.util.Map;
 
 public class RefrigeratorMain {
